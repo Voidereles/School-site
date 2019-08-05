@@ -1,7 +1,32 @@
+.text-hawkesBlue {
+    color: #c1d3ff;
+}
+
+.text-lightGreen {
+    color: #51be78;
+}
+
+.font-size-doubled {
+    font-size: 2rem;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.bg-lightGreen {
+    background-color: #3db166;
+}
+
+.btn {
+    border-radius: 0;
+}
+
 .header {
     height: 60px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
 
     &__row {
         position: relative;
@@ -91,11 +116,52 @@
     }
 
     &__btn {
-        border-radius: 0;
         color: rgb(45, 45, 45);
         font-weight: 600;
         font-size: 0.5rem;
         background-color: white;
+    }
+}
+
+.main-features {
+    font-weight: 500;
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-right: 15px;
+        float: left;
+    }
+
+    &__h4 {
+        color: #192f59;
+        font-size: 1.125rem;
+    }
+
+    &__p {
+        font-size: 1rem;
+        color: #b7b7b7;
+    }
+}
+
+.about {
+    &__img-container {
+        width: 100%;
+        background-image: url('images/about-bg-1.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 450px;
+    }
+
+    &__description {
+        background-image: url('images/about-bg-2.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__statement {
+        font-size: 1.2rem;
     }
 
 
