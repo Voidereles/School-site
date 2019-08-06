@@ -10,6 +10,14 @@
     color: #3db166;
 }
 
+.text-dullBlue {
+    color: #163269;
+}
+
+.text-lightGrey {
+    color: #959595;
+}
+
 .font-size-doubled {
     font-size: 2rem;
 }
@@ -27,7 +35,7 @@
 }
 
 .btn {
-    border-radius: 0;
+    border-radius: 2px;
 }
 
 .header {
@@ -182,7 +190,7 @@
 
     &__subheading {
         line-height: 1.7;
-        font-size: 1.4rem;
+        font-size: 1.375rem;
     }
 
     &__paragraph {
@@ -203,5 +211,252 @@
 
     &__more {
         font-size: 0.875rem;
+    }
+}
+
+.news {
+
+    &__heading,
+    &__small-img {
+        float: left;
+    }
+
+    &__grey-line {
+        border-bottom: 2px solid #e6e6e6;
+        overflow: hidden;
+    }
+
+    &__more {
+        clear: both;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__main-img {
+        width: 100%;
+    }
+
+    &__small-img {
+        max-width: 80px;
+    }
+
+    &__classification {
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        letter-spacing: 1px;
+    }
+
+    &__title {
+        color: #444;
+        font-size: 1.2rem;
+    }
+
+    &__title-small {
+        color: #444;
+        font-size: 1rem;
+    }
+
+    &__title:hover {
+        color: #3db166;
+    }
+}
+
+.quick-links {
+    background-image: url('images/link-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__heading {
+        font-size: 1.5rem;
+    }
+
+    .fa-link {
+        transform: rotateZ(90deg);
+    }
+
+    &__link {
+        display: block;
+        border-bottom: 1px solid rgba(230, 230, 230, 0.3)
+    }
+}
+
+.twitter {
+    .fa-twitter {
+        font-size: 1.5rem;
+        float: left;
+        padding-bottom: 9rem;
+    }
+
+    &__quote {
+        font-size: 0.875rem;
+    }
+
+    &__time {
+        color: #b7b7b7;
+    }
+}
+
+.apply-button:hover {
+    text-decoration: none;
+}
+
+.video {
+    background-image: url('images/video-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__heading {
+        font-size: 2.4rem;
+    }
+
+    &__p {
+        line-height: 1.7;
+        font-size: 1.2rem;
+    }
+}
+
+.tabs {
+    background-color: #efefef;
+
+    &__tab-card {
+        border: none;
+    }
+
+    &__card-header {
+        background-color: #f7f7f7;
+        border: none;
+    }
+
+    &__nav-link {
+        font-size: 0.8125rem;
+        color: #8d8d8d;
+        border: none;
+    }
+
+    .nav-tabs .nav-link {
+        border: none;
+        border-radius: none;
+    }
+
+    .nav-link.active {
+        background-color: #f7f7f7;
+        color: #464646;
+        border: none;
+    }
+
+    &__card-title {
+        color: #314e85;
+        font-size: 1.375rem;
+        letter-spacing: 1px;
+    }
+
+    &__card-text {
+        color: #8c8c8c;
+        line-height: 1.7;
+    }
+}
+
+.more-features {
+    background-image: linear-gradient(#efefef, white);
+
+    &__item-1 {
+        background-image: url('images/col-bg-1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__item-3 {
+        background-image: url('images/col-bg-3.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__heading {
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+}
+
+.donations {
+    &__heading {
+        font-size: 1.375rem;
+    }
+
+    &__p {
+        color: #747474;
+        line-height: 1.5;
+    }
+
+    &__button {
+        font-size: 0.8125rem;
+    }
+}
+
+.up-events {
+    overflow-x: hidden;
+
+    &__heading {
+        float: left;
+        font-size: 1.375rem;
+    }
+
+    &__grey-line {
+        border-bottom: 2px solid #e6e6e6;
+        overflow: hidden;
+    }
+
+    &__date-day {
+        font-size: 2.125rem;
+        line-height: 2.215rem;
+        color: #50bd77;
+    }
+
+    &__date-month {
+        text-transform: uppercase;
+        border-bottom: 2px solid #50bd77;
+    }
+
+    &__event-title {
+        font-size: 1.125rem;
+    }
+
+    &__hour,
+    &__location {
+        color: #50bd77;
+        font-size: 0.8125rem;
+        line-height: 1.375rem;
+        display: inline-block;
+    }
+
+    &__view-all {
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-size: 0.875rem;
+    }
+}
+
+.newsletter {
+    &__container {
+        background-image: url('images/newsletter-bg.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__email-input {
+        background-color: #1a2742;
+        border: none;
+    }
+}
+
+
+@media (min-width:992px) {
+    .apply {
+        &__description {
+            background: url("images/about-bg-2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
