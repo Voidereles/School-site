@@ -34,6 +34,10 @@
     background-color: #3db166;
 }
 
+.bg-darkBlue {
+    background-color: #1c2e51;
+}
+
 .btn {
     border-radius: 2px;
 }
@@ -447,6 +451,14 @@
     &__email-input {
         background-color: #1a2742;
         border: none;
+    }
+}
+
+.search {
+    &__container {
+        background-image: url('images/search-bg.jpg');
+        background-size: cover;
+        background-position: center;
     }
 }
 
