@@ -461,8 +461,54 @@
         background-size: cover;
         background-position: center;
     }
+
+    &__heading {
+        font-size: 1.5rem;
+    }
+
+    &__input {
+        background-color: #3b4b6b;
+        color: #b1c0e0;
+        border: 0;
+        font-size: 0.875rem;
+    }
 }
 
+.companies {
+    background-color: #1b2434;
+}
+
+.footer {
+    background-color: #181818;
+    color: #ababab;
+
+    &__university-email {
+        display: block;
+        border-bottom: 2px solid #50bd77;
+    }
+
+    .page-map {
+        &__heading {
+            border-bottom: 2px solid #50bd77;
+        }
+
+        &__link {
+            color: #ababab;
+        }
+    }
+
+    &__copyright {
+        color: #838383;
+        background-color: #202020;
+    }
+
+    .copyright {
+        &__media-icon {
+            color: #50bd77;
+            font-size: 1.2rem;
+        }
+    }
+}
 
 @media (min-width:992px) {
     .apply {
