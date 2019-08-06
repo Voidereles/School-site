@@ -446,7 +446,7 @@
   border: none;
 }
 
-.search__container {
+.search {
   background-image: url("images/search-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -500,6 +500,9 @@
     background: url("images/about-bg-2.jpg");
     background-size: cover;
     background-position: center;
+  }
+  .search__container {
+    margin-left: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

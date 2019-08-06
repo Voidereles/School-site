@@ -456,11 +456,9 @@
 }
 
 .search {
-    &__container {
-        background-image: url('images/search-bg.jpg');
-        background-size: cover;
-        background-position: center;
-    }
+    background-image: url('images/search-bg.jpg');
+    background-size: cover;
+    background-position: center;
 
     &__heading {
         font-size: 1.5rem;
@@ -517,5 +515,9 @@
             background-size: cover;
             background-position: center;
         }
+    }
+
+    .search__container {
+        margin-left: 50%;
     }
 }
