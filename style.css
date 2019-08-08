@@ -240,6 +240,28 @@
 
 .news__link {
   text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.news__link:hover {
+  text-decoration: none;
+}
+
+.news__link:hover .news__img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.news__img-container {
+  overflow: hidden;
+}
+
+.news__img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .news__main-img {
@@ -305,6 +327,7 @@
 
 .twitter__time {
   color: #b7b7b7;
+  display: block;
 }
 
 .apply-button:hover {
@@ -505,6 +528,21 @@
 }
 
 @media (min-width: 992px) {
+  .owl-one {
+    z-index: -1;
+  }
+  .main-features {
+    margin-top: -80px;
+  }
+  .main-features .container {
+    box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+    -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+    -webkit-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+    background-color: #ffffff;
+    border-radius: 3px 3px;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+  }
   .apply__description {
     background: url("images/about-bg-2.jpg");
     background-size: cover;
