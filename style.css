@@ -111,11 +111,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   opacity: 1;
   visibility: inherit;
   z-index: 1;
+  max-height: 80vh;
 }
 
 .main-slider__text {
@@ -130,19 +133,22 @@
 .main-slider__univ-heading {
   font-family: 'Playfair Display', serif;
   background-color: rgba(24, 36, 59, 0.9);
-  line-height: calc(1.5rem + 2px);
-  padding: 3px;
+  line-height: calc(8vmin + 2px);
+  padding: 1.5vmin;
+  font-size: 8vmin;
 }
 
 .main-slider__subheading {
-  font-size: 0.75rem;
+  font-size: 3vmin;
 }
 
 .main-slider__btn {
   color: #2d2d2d;
   font-weight: 600;
-  font-size: 0.5rem;
+  font-size: 2vmin;
   background-color: white;
+  line-height: calc(3vmin + 2px);
+  border-left: .5vmin solid #3db166;
 }
 
 .main-features {
@@ -506,6 +512,12 @@
   }
   .search__container {
     margin-left: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .apply .container {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
