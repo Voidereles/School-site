@@ -284,10 +284,13 @@
   border-bottom: 1px solid rgba(230, 230, 230, 0.3);
 }
 
+.twitter {
+  background-color: #f3f3f3;
+}
+
 .twitter .fa-twitter {
   font-size: 1.5rem;
   float: left;
-  padding-bottom: 9rem;
 }
 
 .twitter__quote {

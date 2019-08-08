@@ -288,10 +288,12 @@
 }
 
 .twitter {
+    background-color: #f3f3f3;
+
+
     .fa-twitter {
         font-size: 1.5rem;
         float: left;
-        padding-bottom: 9rem;
     }
 
     &__quote {
@@ -301,7 +303,10 @@
     &__time {
         color: #b7b7b7;
     }
+
+
 }
+
 
 .apply-button:hover {
     text-decoration: none;
