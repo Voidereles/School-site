@@ -327,7 +327,6 @@
 
 .twitter__time {
   color: #b7b7b7;
-  display: block;
 }
 
 .apply-button:hover {
@@ -528,11 +527,21 @@
 }
 
 @media (min-width: 992px) {
+  .header {
+    height: 100px;
+  }
+  .header__logo img {
+    max-height: 60px;
+  }
+  .main-wrapper {
+    margin-top: 100px;
+  }
   .owl-one {
-    z-index: -1;
+    z-index: 0;
   }
   .main-features {
-    margin-top: -80px;
+    margin-top: -70px;
+    position: relative;
   }
   .main-features .container {
     box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
@@ -542,6 +551,8 @@
     border-radius: 3px 3px;
     -moz-border-radius: 3px 3px;
     -webkit-border-radius: 3px 3px;
+    z-index: 1;
+    position: relative;
   }
   .apply__description {
     background: url("images/about-bg-2.jpg");
@@ -550,6 +561,12 @@
   }
   .search__container {
     margin-left: 50%;
+  }
+  .twitter .fa-twitter {
+    padding-bottom: 3rem;
+  }
+  .twitter__time {
+    display: block;
   }
 }
 
