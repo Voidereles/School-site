@@ -61,7 +61,35 @@ $header-height-desktop: 100px;
         line-height: 40px;
     }
 
-    &__search {
+    &__mobile-menu {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10%;
+
+        div,
+        div::before,
+        div::after {
+            display: block;
+            background-color: black;
+            width: 1.25rem;
+            height: 2px;
+        }
+
+        div::before {
+            content: '';
+            position: absolute;
+            transform: translateY(-0.4rem);
+        }
+
+        div::after {
+            content: '';
+            position: absolute;
+            transform: translateY(0.4rem);
+        }
+    }
+
+    .mobile-menu__search {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -69,32 +97,9 @@ $header-height-desktop: 100px;
         width: 1rem;
     }
 
-    &__mobile-menu {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10%;
-    }
-
-    &__mobile-menu div,
-    &__mobile-menu div::before,
-    &__mobile-menu div::after {
-        display: block;
-        background-color: black;
-        width: 1.25rem;
-        height: 2px;
-    }
-
-    &__mobile-menu div::before {
-        content: '';
-        position: absolute;
-        transform: translateY(-0.4rem);
-    }
-
-    &__mobile-menu div::after {
-        content: '';
-        position: absolute;
-        transform: translateY(0.4rem);
+    &__desktop-menu {
+        display: none;
+        visibility: none;
     }
 }
 
@@ -124,7 +129,7 @@ $header-height-desktop: 100px;
     &__text {
         z-index: 2;
         position: absolute;
-        left: 5%;
+        left: 8%;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -541,35 +546,47 @@ $header-height-desktop: 100px;
 @media (min-width:992px) {
     .header {
         height: $header-height-desktop;
-    }
 
-    .header__logo img {
-        max-height: $header-height-mobile;
+        &__logo img {
+            max-height: $header-height-mobile;
+        }
+
+        &__desktop-menu {
+            visibility: visible;
+            display: block;
+        }
+
+        &__mobile-menu {
+            visibility: hidden;
+            display: none;
+        }
+
+
     }
 
     .main-wrapper {
         margin-top: $header-height-desktop;
     }
 
-    .owl-one {
-        z-index: 0;
-    }
-
     .main-features {
         margin-top: -70px;
         position: relative;
-    }
 
-    .main-features .container {
-        box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
-        -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
-        -webkit-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
-        background-color: #ffffff;
-        border-radius: 3px 3px;
-        -moz-border-radius: 3px 3px;
-        -webkit-border-radius: 3px 3px;
-        z-index: 1;
-        position: relative;
+        .owl-one {
+            z-index: 0;
+        }
+
+        .container {
+            box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+            -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+            -webkit-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.09);
+            background-color: #ffffff;
+            border-radius: 3px 3px;
+            -moz-border-radius: 3px 3px;
+            -webkit-border-radius: 3px 3px;
+            z-index: 1;
+            position: relative;
+        }
     }
 
     .apply {
