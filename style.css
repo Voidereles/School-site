@@ -42,6 +42,10 @@
   border-radius: 2px;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .header {
   height: 60px;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
@@ -54,8 +58,8 @@
 }
 
 .header__logo {
-  max-height: 40px;
-  line-height: 40px;
+  max-height: 60px;
+  line-height: 60px;
 }
 
 .header__mobile-menu {
@@ -105,7 +109,6 @@
 
 .main__wrapper {
   margin-top: 60px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .main-slider__item {
@@ -532,23 +535,6 @@
 }
 
 @media (min-width: 992px) {
-  .header {
-    height: 100px;
-  }
-  .header__logo img {
-    max-height: 60px;
-  }
-  .header__desktop-menu {
-    visibility: visible;
-    display: block;
-  }
-  .header__mobile-menu {
-    visibility: hidden;
-    display: none;
-  }
-  .main-wrapper {
-    margin-top: 100px;
-  }
   .main-features {
     margin-top: -70px;
     position: relative;
@@ -580,6 +566,46 @@
   }
   .twitter__time {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    height: 100px;
+  }
+  .header__logo {
+    max-height: 100px;
+    line-height: 100px;
+  }
+  .header__desktop-menu {
+    visibility: visible;
+    display: block;
+  }
+  .header__mobile-menu {
+    visibility: hidden;
+    display: none;
+  }
+  .header .nav-pills .nav-link.active,
+  .header .nav-pills .show > .nav-link {
+    color: #3db166;
+    padding-bottom: 28px;
+    border-bottom: 8px solid #3db166;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #fff;
+  }
+  .header .nav-link:hover {
+    color: #3db166;
+  }
+  .header .megamenu {
+    position: absolute;
+    width: 60vw;
+    left: calc(-50vw + 10rem);
+    right: 0;
+    padding: 15px;
+  }
+  .main-wrapper {
+    margin-top: 100px;
   }
 }
 

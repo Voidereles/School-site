@@ -46,6 +46,10 @@ $header-height-desktop: 100px;
     border-radius: 2px;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .header {
     height: $header-height-mobile;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
@@ -57,8 +61,8 @@ $header-height-desktop: 100px;
     }
 
     &__logo {
-        max-height: 40px;
-        line-height: 40px;
+        max-height: $header-height-mobile;
+        line-height: $header-height-mobile;
     }
 
     &__mobile-menu {
@@ -105,7 +109,6 @@ $header-height-desktop: 100px;
 
 .main__wrapper {
     margin-top: $header-height-mobile;
-    font-family: 'Poppins', sans-serif;
 }
 
 .main-slider {
@@ -544,30 +547,6 @@ $header-height-desktop: 100px;
 }
 
 @media (min-width:992px) {
-    .header {
-        height: $header-height-desktop;
-
-        &__logo img {
-            max-height: $header-height-mobile;
-        }
-
-        &__desktop-menu {
-            visibility: visible;
-            display: block;
-        }
-
-        &__mobile-menu {
-            visibility: hidden;
-            display: none;
-        }
-
-
-    }
-
-    .main-wrapper {
-        margin-top: $header-height-desktop;
-    }
-
     .main-features {
         margin-top: -70px;
         position: relative;
@@ -608,7 +587,59 @@ $header-height-desktop: 100px;
     .twitter__time {
         display: block;
     }
+}
 
+@media (min-width:1200px) {
+    .header {
+        height: $header-height-desktop;
+
+        &__logo {
+            max-height: $header-height-desktop;
+            line-height: $header-height-desktop;
+        }
+
+        &__desktop-menu {
+            visibility: visible;
+            display: block;
+        }
+
+        &__mobile-menu {
+            visibility: hidden;
+            display: none;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #3db166;
+            padding-bottom: 28px;
+            border-bottom: 8px solid #3db166;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #3db166;
+        }
+
+
+        .megamenu {
+            position: absolute;
+            width: 60vw;
+            left: calc(-50vw + 10rem);
+            right: 0;
+            padding: 15px;
+        }
+
+
+
+
+
+    }
+
+    .main-wrapper {
+        margin-top: $header-height-desktop;
+    }
 
 }
 
